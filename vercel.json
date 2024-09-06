@@ -1,28 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "weatherproj/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
-        }
-      },
-      {
-        "src": "build.sh",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "staticfiles"
-        }
+  "version": 2,
+  "builds": [
+    {
+      "src": "weatherproj/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.9"
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "weatherproj/wsgi.py"
-      }
-    ],
-    "outputDirectory": "staticfiles"
-  }
-  
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "weatherproj/wsgi.py"
+    }
+  ]
+}
