@@ -1,0 +1,107 @@
+.about-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.subheading {
+    font-size: 24px;
+    color: #6c757d;
+}
+
+.project-title {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.vision-section {
+    background-color: #007bff;
+    color: white;
+    padding: 60px 0;
+}
+
+.cta-section {
+    padding: 40px 0;
+}
+
+.mt-5t {
+    margin-top: 1rem !important;
+    max-height: fit-content !important;
+}
+
+@keyframes running-led {
+    0% {
+        box-shadow: 0 0 10px 10px #ffffff, /* Daylight */
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    12.5% {
+        box-shadow: 0 0 10px 10px #f5f5dc, /* Cool White */
+                    0 0 10px 10px #ffffff, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    25% {
+        box-shadow: 0 0 10px 10px #fdf5e6, /* Warm White */
+                    0 0 10px 10px #f5f5dc, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    37.5% {
+        box-shadow: 0 0 10px 10px #0000ff, /* Blue */
+                    0 0 10px 10px #fdf5e6, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    50% {
+        box-shadow: 0 0 10px 10px #add8e6, /* Blue Light */
+                    0 0 10px 10px #0000ff, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    62.5% {
+        box-shadow: 0 0 10px 10px #ffa500, /* Orange Light */
+                    0 0 10px 10px #add8e6, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    75% {
+        box-shadow: 0 0 10px 10px #800080, /* Purple Light */
+                    0 0 10px 10px #ffa500, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    87.5% {
+        box-shadow: 0 0 10px 10px #f5deb3, /* Soft White */
+                    0 0 10px 10px #800080, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+    100% {
+        box-shadow: 0 0 10px 10px #ffff00, /* Yellow Light */
+                    0 0 10px 10px #f5deb3, 
+                    0 0 10px 10px transparent, 
+                    0 0 10px 10px transparent;
+    }
+}
+
+.card.shadow-lgy {
+    animation: running-led 2s linear infinite !important;
+    border-radius: 10px;
+    /* box-shadow: none !important; Remove Bootstrap's shadow */
+}
+.foot{
+    background-color: rgba(0, 0, 0, 0.655);
+    border-radius: 20px;
+}
+
+.mb-3{
+    color: aliceblue
+}
