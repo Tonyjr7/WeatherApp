@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*f5@+@!8oh!c#0j62ns=7ns1&nrkhkr7ri5$_gm%m$i&v$es$t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['waveweatherapp.netlify.app', '.vercel.app', 'weatherapp-puce-psi.vercel.app']
 
